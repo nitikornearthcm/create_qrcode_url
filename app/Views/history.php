@@ -40,7 +40,7 @@ table, th, td {
                         <td><u><a href="<?php echo $value['full_url']; ?>" target="_blank"><?php echo $value['full_url']; ?></a> </u></td>
                         <td style="width: 400px;"><?php echo $value['create_time']; ?></td>
                         <td><u><a href="<?php echo $value['short_url']; ?>" target="_blank"><?php echo $value['short_url']; ?></a> </u></td>
-                        <td><img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=`<?php echo $value['short_url']; ?>`" alt=""></td>
+                        <td><img src="https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=<?php echo $value['short_url']; ?>" alt=""></td>
                     </tr>     
       <?php 
                     $y = $y > 4 ? $y = 0 : $y = $y;
